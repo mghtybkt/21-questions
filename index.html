@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>🐯养育手册</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    body { font-size: 16px; line-height: 1.8; }
+    .markdown-section { max-width: 800px; font-size: 16px; line-height: 1.8; }
+    @media screen and (max-width: 768px) {
+      .markdown-section { padding: 16px; font-size: 17px; }
+    }
+    .markdown-section blockquote {
+      border-left: 4px solid #42b983;
+      background-color: #f8f8f8;
+      padding: 10px 16px;
+      margin: 16px 0;
+    }
+    .app-sub-sidebar { display: none; }
+  </style>
+</head>
+<body>
+  <div id="app">加载中...</div>
+  <script>
+    window.$docsify = {
+      name: '🐯养育手册',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: {
+        placeholder: '搜索',
+        noData: '没有找到结果',
+        paths: 'auto'
+      },
+      auto2top: true
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+</body>
+</html>
